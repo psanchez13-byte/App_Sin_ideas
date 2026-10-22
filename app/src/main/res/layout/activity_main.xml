@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Sección de Login (POST) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autenticación"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:minHeight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario (ej: admin)" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:minHeight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña (ej: secreto123)" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESIÓN (POST)"
+        android:backgroundTint="#4CAF50"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="24dp"
+        android:background="#CCCCCC"/>
+
+    <!-- Sección de Consulta (GET) -->
+    <Button
+        android:id="@+id/btnGetInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OBTENER MIS DATOS (GET)"
+        android:backgroundTint="#2196F3"/>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Resultados del servidor aparecerán aquí..."
+        android:textSize="16sp"
+        android:textColor="#333333"/>
+</LinearLayout>
